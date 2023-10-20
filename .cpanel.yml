@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/presen24/public_html/fullstackabsen
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
